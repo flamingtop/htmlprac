@@ -2,4 +2,4 @@
 demo for html bootstrap and jQuery
 ------
 
-- [introduction,html](https://codepen.io/lanhan/full/gmNKvW/)
+- [introduction.html](https://codepen.io/lanhan/full/gmNKvW/)
