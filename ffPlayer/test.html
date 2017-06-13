@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html style="height: 100%">
+  <head>
+    <title>ff-player</title>
+    <meta charset="utf-8" />
+  </head>
+  <body style="height: 100%">
+    <audio controls="controls"> 
+      <source src="file:///C:/Users/CT/Documents/mycode/practice/htmlprac/ffPlayer/music/The Chain.mp3" />
+    </audio>
+    <input type="file" id="file">
+    <audio controls="controls" id="test"> 
+    </audio>
+    <script>
+      var test = document.querySelector('#test')
+      var file = document.querySelector('#file')
+      file.addEventListener('change', function () {
+        if (file.files[0]) {
+          test.src = URL.createObjectURL(file.files[0])
+        }
+      })
+    </script>
+  </body>
+</html>
